@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking System - Login</title>
+</head>
+<body>
+
+    <div id="login-view">
+        <header>
+            <h1>🔒USER/ADMIN LOGIN</h1>
+            <p>Please enter your credentials to access the Parking Dashboard.</p>
+        </header>
+
+        <section>
+            <form onsubmit="event.preventDefault(); document.getElementById('login-view').hidden = true; document.getElementById('dashboard-view').hidden = false;">
+                <div>
+                    <label>Username:</label>
+                    <input type="text" placeholder="Enter anything..." required>
+                </div>
+                <br>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" placeholder="Enter anything..." required>
+                </div>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+    </div>
+
+    <div id="dashboard-view" hidden style="background: url('Gemini_Generated_Image_xch12mxch12mxch1.png') no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px;">
+        
+        <div style="background-color: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 10px;">
+            <header>
+                <h1>🅿️ Parking Lot Booking System</h1>
+                <p>Reserve your parking space quickly and efficiently online</p>
+                <button onclick="location.reload()">Logout</button>
+            </header>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#parking">Parking Map</a>
+                <a href="#booking">Booking</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div>
+                <section id="home">
+                    <h2>Welcome to Our Parking Booking Platform</h2>
+                    <div>
+                        <p><strong>Secure and convenient parking reservations</strong> for your vehicles. Book your spot in advance and enjoy a hassle-free parking experience.</p>
+                    </div>
+
+                    <h3>Why Book With Us?</h3>
+                    <div>
+                        <div>
+                            <strong>Real-time Availability</strong>
+                            <p>Check parking spaces instantly</p>
+                        </div>
+                        <div>
+                            <strong>Secure Booking</strong>
+                            <p>Safe and encrypted online system</p>
+                        </div>
+                        <div>
+                            <strong>Multiple Locations</strong>
+                            <p>Park across the city</p>
+                        </div>
+                        <div>
+                            <strong>No Hidden Charges</strong>
+                            <p>Transparent and affordable rates</p>
+                        </div>
+                        <div>
+                            <strong>24/7 Support</strong>
+                            <p>Always here for you</p>
+                        </div>
+                        <div>
+                            <strong>Safe & Monitored</strong>
+                            <p>CCTV and security guards</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="services">
+                    <h2>Our Parking Services</h2>
+
+                    <h3>1. Hourly Parking</h3>
+                    <p>Perfect for short-term parking needs. Book for as little as 1 hour or up to 24 hours.</p>
+                    <ul>
+                        <li>Flexible booking duration</li>
+                        <li>Pay-per-hour rates</li>
+                        <li>Quick check-in and check-out</li>
+                    </ul>
+
+                    <h3>2. Monthly Passes</h3>
+                    <p>Unlimited parking access for an entire month at discounted rates.</p>
+                    <ul>
+                        <li>Unlimited entries and exits</li>
+                        <li>Reserved parking space</li>
+                        <li>Monthly renewal options</li>
+                    </ul>
+
+                    <h3>3. Airport Parking</h3>
+                    <p>Dedicated parking facilities near airport with shuttle service.</p>
+                    <ul>
+                        <li>Secure overnight parking</li>
+                        <li>Free shuttle service</li>
+                        <li>Weather protection</li>
+                    </ul>
+
+                    <h3>4. VIP Premium Parking</h3>
+                    <p>Exclusive premium parking spaces with additional amenities.</p>
+                    <ul>
+                        <li>Prime location spots</li>
+                        <li>Car wash included</li>
+                        <li>Priority customer service</li>
+                    </ul>
+                </section>
+
+                <section id="parking">
+                    <h2>Parking Lot Map & Availability</h2>
+                    <p>
+                        <strong>Current Status:</strong> <span>18 of 36</span> spaces available
+                    </p>
+
+                    <h3>Floor 1 - Ground Level</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Slot</th>
+                                <th>Status</th>
+                                <th>Type</th>
+                                <th>Price/Hour</th>
+                                <th>Monthly Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>F1-1 to F1-4</td>
+                                <td><span>Available</span></td>
+                                <td>Standard</td>
+                                <td><span>₹50</span></td>
+                                <td>₹3,000</td>
+                            </tr>
+                            <tr>
+                                <td>F1-5 to F1-8</td>
+                                <td><span>Booked</span></td>
+                                <td>Standard</td>
+                                <td><span>₹50</span></td>
+                                <td>₹3,000</td>
+                            </tr>
+                            <tr>
+                                <td>F1-9 to F1-12</td>
+                                <td><span>Available</span></td>
+                                <td>Compact</td>
+                                <td><span>₹40</span></td>
+                                <td>₹2,400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Floor 2 - Level 1</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Slot</th>
+                                <th>Status</th>
+                                <th>Type</th>
+                                <th>Price/Hour</th>
+                                <th>Monthly Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>F2-1 to F2-4</td>
+                                <td><span>Available</span></td>
+                                <td>Premium</td>
+                                <td><span>₹75</span></td>
+                                <td>₹4,500</td>
+                            </tr>
+                            <tr>
+                                <td>F2-5 to F2-8</td>
+                                <td><span>Booked</span></td>
+                                <td>Premium</td>
+                                <td><span>₹75</span></td>
+                                <td>₹4,500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Floor 3 - Level 2</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Slot</th>
+                                <th>Status</th>
+                                <th>Type</th>
+                                <th>Price/Hour</th>
+                                <th>Monthly Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>F3-1 to F3-4</td>
+                                <td><span>Booked</span></td>
+                                <td>Standard</td>
+                                <td><span>₹50</span></td>
+                                <td>₹3,000</td>
+                            </tr>
+                            <tr>
+                                <td>F3-5 to F3-8</td>
+                                <td><span>Available</span></td>
+                                <td>Compact</td>
+                                <td><span>₹40</span></td>
+                                <td>₹2,400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="booking">
+                    <h2>Online Parking Booking Form</h2>
+                    <form action="">
+                        <div>
+                            <div>
+                                <label>Full Name *</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div>
+                                <label>Email Address *</label>
+                                <input type="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label>Phone Number *</label>
+                                <input type="tel" name="phone" required>
+                            </div>
+                            <div>
+                                <label>Vehicle Registration *</label>
+                                <input type="text" name="vehicle" placeholder="e.g., AP05AB1234">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label>Vehicle Type *</label>
+                                <select name="vehicle-type" required>
+                                    <option>Car - Standard</option>
+                                    <option>Car - Compact</option>
+                                    <option>SUV</option>
+                                    <option>Motorcycle</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Parking Location *</label>
+                                <select name="location" required>
+                                    <option>Mahurwada parking - ₹50/hour</option>
+                                    <option>Gitam parking - ₹40/hour</option>
+                                    <option>Airport parking - ₹75/hour</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label>Date *</label>
+                                <input type="date" name="date" required>
+                            </div>
+                            <div>
+                                <label>Time *</label>
+                                <input type="time" name="start-time" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label>Duration (hours) *</label>
+                                <input type="number" name="duration" min="1" max="24" value="2" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label>Special Requirements:</label>
+                            <textarea name="message" placeholder="Any special parking needs?"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="terms" required>
+                            <label>I agree to terms and conditions</label>
+                        </div>
+
+                        <input type="submit" value="Book Parking Space">
+                        <input type="reset" value="Clear Form">
+                    </form>
+                </section>
+
+                <section id="pricing">
+                    <h2>Pricing Plans</h2>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Plan Type</th>
+                                <th>Duration</th>
+                                <th>Standard Slot</th>
+                                <th>Compact Slot</th>
+                                <th>Premium Slot</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Hourly Rate</strong></td>
+                                <td>Per Hour</td>
+                                <td><span>₹50</span></td>
+                                <td><span>₹40</span></td>
+                                <td><span>₹75</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Daily Rate</strong></td>
+                                <td>24 Hours</td>
+                                <td><span>₹400</span></td>
+                                <td><span>₹300</span></td>
+                                <td><span>₹550</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Monthly Pass</strong></td>
+                                <td>30 Days</td>
+                                <td><span>₹3,000</span></td>
+                                <td><span>₹2,400</span></td>
+                                <td><span>₹4,500</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Annual Pass</strong></td>
+                                <td>365 Days</td>
+                                <td><span>₹28,000</span></td>
+                                <td><span>₹22,000</span></td>
+                                <td><span>₹42,000</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        <strong>Special Discounts:</strong> 10% off quarterly passes • 15% off annual passes
+                    </p>
+                </section>
+
+                <section id="faq">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <div>
+                        <strong>How do I book a parking space?</strong>
+                        <p>Fill out our online booking form above with your details and select your preferred location and time. Complete the payment and you'll receive a confirmation email.</p>
+                    </div>
+
+                    <div>
+                        <strong>Can I cancel or modify my booking?</strong>
+                        <p>Yes, you can cancel up to <strong>2 hours before</strong> your booking time for a full refund. Modifications are also allowed.</p>
+                    </div>
+
+                    <div>
+                        <strong>What if I exceed the booked duration?</strong>
+                        <p>Late checkout charges of <strong>₹50 per hour</strong> will apply. We recommend extending your booking in advance to avoid extra charges.</p>
+                    </div>
+
+                    <div>
+                        <strong>Are the parking lots secure?</strong>
+                        <p><strong>Yes!</strong> All our facilities have 24/7 CCTV surveillance and trained security guards on duty. Your vehicle is completely safe with us.</p>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <h2>Contact Us</h2>
+
+                    <div>
+                        <div>
+                            <strong>📞 Phone</strong>
+                            <p>+91 7300187277</p>
+                        </div>
+                        <div>
+                            <strong>📧 Email</strong>
+                            <p>support@parkingbooking.com</p>
+                        </div>
+                        <div>
+                            <strong>📍 Address</strong>
+                            <p>123 Parking Plaza, Visakhapatnam, AP 530045</p>
+                        </div>
+                    </div>
+
+                    <h3>Send us a Message</h3>
+                    <form action="">
+                        <div>
+                            <div>
+                                <label>Your Name:</label>
+                                <input type="text" name="c-name" required>
+                            </div>
+                            <div>
+                                <label>Your Email:</label>
+                                <input type="email" name="c-email" required>
+                            </div>
+                        </div>
+
+                        <label>Issue Type:</label>
+                        <select name="issue-type">
+                            <option>Booking Issue</option>
+                            <option>Payment Issue</option>
+                            <option>General Query</option>
+                        </select>
+
+                        <label>Message:</label>
+                        <textarea name="desc" placeholder="Describe your issue or query..."></textarea>
+
+                        <input type="submit" value="Submit Inquiry">
+                    </form>
+                </section>
+
+                <footer>
+                    <p>&copy; 2025 Parking Lot Booking System. All rights reserved.</p>
+                    <p>
+                        <a href="#home">Home</a> |
+                        <a href="#services">Services</a> |
+                        <a href="#contact">Contact</a>
+                    </p>
+                </footer>
+            </div>
+    </div>
+
+</body>
+</html>
